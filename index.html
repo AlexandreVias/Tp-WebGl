@@ -1,0 +1,43 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>TP 3</title>
+    <script src="gl-matrix-min.js"></script>
+</head>
+<body onload='main()'>
+<div>
+    <label for="translationX">Translation X
+        <input type="range" value="0" min="-10" max="10" step="0.1" id="translationX">
+    </label>
+    <label for="translationY">Translation Y
+        <input type="range" value="0" min="-10" max="10" step="0.1" id="translationY">
+    </label>
+    <label for="translationZ">Translation Z
+        <input type="range" value="0" min="-10" max="10" step="0.1" id="translationZ">
+    </label>
+</div>
+<div>
+    <label for="rotationX">Rotation X
+        <input type="range" value="0" step="0.1" id="rotationX">
+    </label>
+    <label for="rotationY">Rotation Y
+        <input type="range" value="0" step="0.1" id="rotationY">
+    </label>
+    <label for="rotationZ">Rotation Z
+        <input type="range" value="0" step="0.1" id="rotationZ">
+    </label>
+</div>
+<div>
+    <label for="zoom">Zoom
+        <input type="range" value="0" min="0.1" max="5" step="0.1" id="zoom">
+    </label>
+    <label for="fov">Fov
+        <input type="range" value="45" min="30" max="120" step="1" id="fov">
+    </label>
+</div>
+    <canvas id='dawin-webgl' width=800 height=600>
+        Utilisez un navigateur compatible avec WebGL
+</canvas>
+<script src="script.js"></script>
+</body>
+</html>
